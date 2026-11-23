@@ -10,7 +10,19 @@ st.markdown("""
 <style>
 .block-container {padding-top: 1.6rem; padding-bottom: 2rem;}
 h1, h2, h3 {letter-spacing: -0.4px;}
-[data-testid="stMetric"] {background: #f4f7fb; border: 1px solid #e5eaf2; padding: 14px; border-radius: 12px;}
+[data-testid="stMetric"] {
+    background: #ffffff !important;
+    border: 1px solid #dbe3ef !important;
+    padding: 16px !important;
+    border-radius: 12px !important;
+}
+
+[data-testid="stMetric"] label,
+[data-testid="stMetric"] [data-testid="stMetricLabel"],
+[data-testid="stMetric"] [data-testid="stMetricValue"] {
+    color: #172033 !important;
+    opacity: 1 !important;
+}
 .small-note {color:#64748b;font-size:0.88rem;}
 </style>
 """, unsafe_allow_html=True)
